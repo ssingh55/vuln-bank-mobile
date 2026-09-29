@@ -16,9 +16,6 @@ class MainActivity : ReactActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    // Log the hardcoded JWT
-    Log.d("Secrets", Secrets.HARDCODED_ADMIN_JWT)
-
     // Store plaintext secrets in SharedPreferences
     val prefs = getSharedPreferences("VulnBankPrefs", Context.MODE_PRIVATE)
     val editor = prefs.edit()
